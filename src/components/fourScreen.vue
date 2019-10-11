@@ -13,10 +13,7 @@ export default {
     return {
     };
   },
-mounted(){
-    
-    qHeight('.wrap',bg)
-  },
+
   components: {},
 
  
@@ -26,9 +23,10 @@ mounted(){
 <style scoped>
 .wrap{
         width:100%;
-        /* height:667px; */
-        /* background-image:url(../assets/imgs/bg.jpg); */
-        background-size:100%;
+        height:100vh;
+        background-image:url(../assets/imgs/bg4.jpg);
+        background-size:cover;
+        background-position: center center;
         background-repeat:no-repeat
     }
 </style>

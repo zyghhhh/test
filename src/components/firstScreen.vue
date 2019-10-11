@@ -20,7 +20,7 @@ export default {
     return {};
   },
   mounted() {
-    qHeight(".wrap", bg);
+    // qHeight(".wrap", bg);
   },
   components: {}
 };
@@ -28,12 +28,13 @@ export default {
 <style  scoped>
 .wrap {
   position: relative;
-
   width: 100%;
-  /* height:667px; */
-  /* background-image:url(../assets/imgs/bg.jpg); */
-  background-size: 100%;
-  background-repeat: no-repeat;
+  height:100vh;
+  background-image:url(../assets/imgs/bg.jpg);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-position: center center;
+
 }
 .top {
   /* height:60%; */
@@ -50,7 +51,7 @@ export default {
 }
 .leftFish1 {
   left:0;
-  bottom:50%;
+  bottom:35%;
   width: 60px;
   margin-bottom:10px;
   animation: leftFish1Move 6s linear infinite;
@@ -64,7 +65,7 @@ export default {
 
 .leftFish2 {
   left: 15%;
-  bottom: 48%;
+  bottom: 30%;
   width: 60px;
   margin-bottom:10px;
   animation: leftFish2Move 9s infinite
@@ -78,7 +79,7 @@ export default {
 }
 .rightFish1 {
   left: 25%;
-  bottom: 46%;
+  bottom: 30%;
   width: 60px;
   margin-bottom:10px;
   animation: rightFish1Move 7s infinite
@@ -93,7 +94,7 @@ export default {
 
 .rightFish2 {
   left: 25%;
-  bottom: 44%;
+  bottom: 35%;
   width: 60px;
   animation: rightFish2Move 12s infinite
 
